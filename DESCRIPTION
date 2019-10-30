@@ -1,0 +1,25 @@
+Package: VASICyto
+Title: VASICyto
+Version: 0.0.0.9000
+Authors@R: person('Clément', 'Nerestan', email = 'clement.nerestan@u-bordeaux.fr', role = c('cre', 'aut'))
+Description: PKG_DESC.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    shiny,
+    golem,
+    attempt,
+    DT,
+    glue,
+    htmltools,
+    processx,
+    thinkr
+RoxygenNote: 6.1.0
+URL: https://github.com/SalebHet/VASICyto.git
+BugReports: https://github.com/SalebHet/VASICyto.git/issues
+Suggests: 
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

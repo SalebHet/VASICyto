@@ -21,5 +21,3 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: https://github.com/SalebHet/VASICyto
-BugReports: https://github.com/SalebHet/VASICyto/issues

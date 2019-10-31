@@ -1,5 +1,5 @@
 Package: VASICyto
-Title: VASICyto
+Title: VASI_CYTO
 Version: 0.0.0.9000
 Authors@R: person('Clément', 'Nerestan', email = 'clement.nerestan@u-bordeaux.fr', role = c('cre', 'aut'))
 Description: PKG_DESC.
@@ -14,7 +14,9 @@ Imports:
     glue,
     htmltools,
     processx,
-    thinkr
+    thinkr,
+    shinydashboard,
+    dplyr
 RoxygenNote: 6.1.0
 Suggests: 
     testthat (>= 2.1.0),

@@ -9,3 +9,6 @@ $run_dev.*
 ^CODE_OF_CONDUCT\.md$
 ^doc$
 ^Meta$
+^\.travis\.yml$
+^appveyor\.yml$
+^C:\Users\cn3\Desktop\VASICyto/Dockerfile$

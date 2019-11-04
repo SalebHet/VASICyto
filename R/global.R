@@ -212,7 +212,7 @@ polyfuncExpr <- function(input, output){
 		for (i in 1:dim(elements)[1]){
 			assign(paste0("values", i), 
 				full_data$pie$data[[paste(input$population2, elements[i,1], elements[i,2])]])
-			dataOut <- list.append(dataOut, get(paste0("values", i)))
+			dataOut <- rlist::list.append(dataOut, get(paste0("values", i)))
 			list_labels <- c(list_labels, paste0("values", i))
 		}
 		names(dataOut) <- list_labels
@@ -315,9 +315,8 @@ histo_polyfunc <- function(dataInput, title){
 #' @param title 
 pie_polyfunc <- function(dataInput, dataValues, title){
   p <- plotly::plot_ly(dataInput$data, labels = ~dataInput$data$Polyfunction, values = ~dataValues, type = 'pie', 
-		marker = list(colors = rainbow(length(dataInput$data$Polyfunction)), line = list(color = '#FFFFFF', width = 1)))# %>%
-  layout(
-          p,
+		marker = list(colors = rainbow(length(dataInput$data$Polyfunction)), line = list(color = '#FFFFFF', width = 1))) #%>%
+  plotly::layout(p,
          title = title,
          xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))

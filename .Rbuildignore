@@ -11,4 +11,3 @@ $run_dev.*
 ^Meta$
 ^\.travis\.yml$
 ^appveyor\.yml$
-^C:\Users\cn3\Desktop\VASICyto/Dockerfile$

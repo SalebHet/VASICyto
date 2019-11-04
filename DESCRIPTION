@@ -16,7 +16,8 @@ Imports:
     processx,
     thinkr,
     shinydashboard,
-    dplyr
+    dplyr,
+    tidyverse
 RoxygenNote: 6.1.0
 Suggests: 
     testthat (>= 2.1.0),

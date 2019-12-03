@@ -74,7 +74,8 @@ totalCytoExpr <- function(input, output){
 	dataTable <- reactive({
 		#load(paste0(system.file("", package = "icsDataViz"), "popCells.RData"))
 		#load("data/popCells.RData")
-	  data("popCells")
+	  #data("popCells")
+		popCells <- VASICyto::popCells
 		plot_data <- popCells[[paste0(input$population, ".totalCYTO")]]		
 	    dataOut <- subset(plot_data, ARM==input$treatment & Stimulation==input$stimulation)
 
@@ -133,7 +134,8 @@ multiCytoExpr <- function(input, output){
 	dataTable <- reactive({
 		#load(paste0(system.file("", package = "icsDataViz"), "popCells.RData"))
 		#load("data/popCells.RData")
-	  data("popCells")
+	  #data("popCells")
+		popCells <- VASICyto::popCells
 		plot_data <- popCells[[paste0(input$population1, ".multiCYTO")]]
 	    dataOut <-  subset(plot_data, ARM==input$treatment1 & Stimulation==input$stimulation1 & TimePoint==input$timepoint)
 		return(dataOut)
@@ -193,7 +195,8 @@ polyfuncExpr <- function(input, output){
   #cat(fp,"\n")
   #wd <- getwd()
   #load(paste0(wd,fp))
-  data("polyfunc")
+  #data("polyfunc")
+	polyfunc.data <- VASICyto::polyfunc.data
 	elements <- expand.grid(c("W0", "W28"), c("Placebo", "Vaccin"))
 
 	dataTable <- reactive({
